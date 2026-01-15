@@ -4,7 +4,12 @@ import { getFunctions, httpsCallable } from 'https://www.gstatic.com/firebasejs/
 // 이 설정 객체는 Firebase 프로젝트를 초기화할 때 자동으로 채워집니다.
 // 이 정보는 공개되어도 안전합니다.
 const firebaseConfig = {
-    // 여기에 Firebase 설정이 들어갑니다.
+    "projectId": "studystyle-59655654-a0baf",
+    "appId": "1:289615779942:web:bf816f609418a3b73e75a7",
+    "storageBucket": "studystyle-59655654-a0baf.firebasestorage.app",
+    "apiKey": "AIzaSyAvktskuEMjJbsOEOXQjp7XeaMyYH925ZY",
+    "authDomain": "studystyle-59655654-a0baf.firebaseapp.com",
+    "messagingSenderId": "289615779942"
 };
 
 // Firebase 앱 초기화
