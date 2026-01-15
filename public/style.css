@@ -1,0 +1,74 @@
+/* 기본 폰트 및 배경 설정 */
+body {
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* 폼 레이블 스타일 */
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #a0aec0; /* gray-400 */
+}
+
+/* 폼 입력 필드 스타일 */
+.form-input {
+    width: 100%;
+    background-color: #2d3748; /* gray-800 */
+    border: 1px solid #4a5568; /* gray-600 */
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    color: #e2e8f0; /* gray-200 */
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #718096; /* gray-500 */
+}
+
+.form-input:focus {
+    ring: 2px;
+    ring-color: #4299e1; /* blue-400 */
+    border-color: #4299e1; /* blue-400 */
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+/* 양력/음력 선택 버튼 */
+.calendar-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #4a5568; /* gray-600 */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #2d3748; /* gray-800 */
+    color: #a0aec0; /* gray-400 */
+    font-weight: 500;
+}
+
+input[type="radio"]:checked + .calendar-btn {
+    background-color: #3b82f6; /* blue-600 */
+    border-color: #3b82f6;
+    color: white;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
+/* 커스텀 스크롤바 스타일 */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1a202c; /* gray-900 */
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4a5568; /* gray-600 */
+    border-radius: 10px;
+    border: 2px solid #1a202c; /* gray-900 */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #718096; /* gray-500 */
+}
