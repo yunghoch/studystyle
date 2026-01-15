@@ -5,7 +5,7 @@ const { OpenAI } = require("openai");
 admin.initializeApp();
 
 // API 키를 코드에 직접 저장하는 대신, Firebase 환경 변수에서 안전하게 가져옵니다.
-// 설정 명령어: firebase functions:config:set openai.key="YOUR_OPENAI_API_KEY"
+firebase functions:config:set openai.key="YOUR_OPENAI_API_KEY"
 const openAIKey = functions.config().openai.key;
 const openai = new OpenAI({ apiKey: openAIKey });
 
